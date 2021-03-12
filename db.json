@@ -13,7 +13,7 @@
         "name10": "git add .    -adds a change in the working directory",
         "name11": "git commit -m            -create a new commit containing the current contents of the index",
         "name12": "git push origin HEAD     -push the current branch",
-        "name13": "git add. > commit -m > push origin   -all one after the other in order to publish on Github",
+        "name13": "git add. > commit -m > push origin   -all, one after the other in order to publish on Github",
         "brake1": "____________________________________________________",
         "title1": "inside CMD commands",
         "name7": "touch     -creates a new file",
@@ -23,7 +23,9 @@
         "name9": "Set-ExecutionPolicy -Scope LocalMachine Unrestricted >>>use on PowerShell to run the .json server",
         "name14": "npm init     -initiate and creates package.json",
         "name15": "npm i        -for package to show up",
-        "name16": "npm i jason-server     -for Heroku >> outside of local server"
+        "name16": "npm i jason-server     -for Heroku >> outside of local server",
+        "name17": "heroku create <name of link>        -initiate and creates the name and url of the app",
+        "name18": "heroku create <name of project>     -initiate and creates the name and url of the project"
 
     }
   ]
