@@ -21,7 +21,9 @@
         "brake2": "____________________________________________________",
         "title2": "server commands",
         "name9": "Set-ExecutionPolicy -Scope LocalMachine Unrestricted >>>use on PowerShell to run the .json server",
-        "name14": "npm init     -initiate and creates package.json"
+        "name14": "npm init     -initiate and creates package.json",
+        "name15": "npm i        -for package to show up",
+        "name16": "npm i jason-server     -for Heroku >> outside of local server"
 
     }
   ]

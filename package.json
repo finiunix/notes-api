@@ -1,0 +1,23 @@
+{
+  "name": "notes-api",
+  "version": "1.0.0",
+  "description": "notes database",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/F1N1/notes-api.git"
+  },
+  "author": "F1N1",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/F1N1/notes-api/issues"
+  },
+  "homepage": "https://github.com/F1N1/notes-api#readme",
+  "dependencies": {
+    "json-server": "^0.16.3"
+  }
+}
