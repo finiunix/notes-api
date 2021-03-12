@@ -1,0 +1,27 @@
+{
+    "notes":[
+    {
+        "title0": "Git Commands",
+        "name0": "git init          -initialized local git repository",
+        "name1": "git add <file>    -add file(s) to index",
+        "name2": "git status        -check status of working tree",
+        "name3": "git commit        -comit changes in index",
+        "brake0": "____________________________________________________",
+        "name4": "git push      -push to remote repository",
+        "name5": "git pull      -pull latest from remote repository",
+        "name6": "git clone     -clone repository into a new directory",
+        "name10": "git add .    -adds a change in the working directory",
+        "name11": "git commit -m            -create a new commit containing the current contents of the index",
+        "name12": "git push origin HEAD     -push the current branch",
+        "name13": "git add. > commit -m > push origin   -all one after the other in order to publish on Github",
+        "brake1": "____________________________________________________",
+        "title1": "inside CMD commands",
+        "name7": "touch     -creates a new file",
+        "name8": "code .    -opens the folder with visual studio",
+        "brake2": "____________________________________________________",
+        "title2": "server commands",
+        "name9": "Set-ExecutionPolicy -Scope LocalMachine Unrestricted >>>use on PowerShell to run the .json server"
+
+    }
+  ]
+}
