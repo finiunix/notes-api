@@ -25,7 +25,10 @@
         "name15": "npm i        -for package to show up",
         "name16": "npm i jason-server     -for Heroku >> outside of local server",
         "name17": "heroku create <name of link>        -initiate and creates the name and url of the app",
-        "name18": "heroku create <name of project>     -initiate and creates the name and url of the project"
+        "name18": "heroku create <name of project>     -initiate and creates the name and url of the project",
+        "name19": "git push heroku main                -push project on heroku",
+        "name20": "heroku open> -open project"
+
 
     }
   ]
