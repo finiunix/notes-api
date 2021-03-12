@@ -20,7 +20,8 @@
         "name8": "code .    -opens the folder with visual studio",
         "brake2": "____________________________________________________",
         "title2": "server commands",
-        "name9": "Set-ExecutionPolicy -Scope LocalMachine Unrestricted >>>use on PowerShell to run the .json server"
+        "name9": "Set-ExecutionPolicy -Scope LocalMachine Unrestricted >>>use on PowerShell to run the .json server",
+        "name14": "npm init     -initiate and creates package.json"
 
     }
   ]
