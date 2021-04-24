@@ -2,7 +2,7 @@
   "name": "notes-api",
   "version": "1.0.0",
   "description": "notes database",
-  "main": "index.js",
+  "main": "server.js",
   "engines": {
     "node": "14.16.0"
   },
@@ -24,4 +24,3 @@
     "json-server": "0.16.3"
   }
 }
-
