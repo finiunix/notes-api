@@ -38,6 +38,7 @@ html {
 body {
   font-family: Open Sans;
   font: normal 20px/2;
+  height: 100vh;
 }
 
 #dock-container {
@@ -60,8 +61,8 @@ body {
   list-style-type: none;
 }
 #dock-container li img {
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
   transition: all 0.5s;
   transform-origin: 50% 100%;
 }
@@ -77,7 +78,7 @@ body {
   display: none;
   bottom: 80px;
   width: 100%;
-  background-color: none;
+  background:none;
   border-radius: 10px;
 }
 #dock-container li:hover span {

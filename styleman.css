@@ -2,15 +2,14 @@
 .sleep-walker {
     position: relative;
     height: 1px;
-    margin: 5rem 0 3rem;
-    background-image: repeating-linear-gradient(to left, transparent 0, transparent 0.12rem, rgba(0, 0, 0, 0.15) 0.125rem, rgba(0, 0, 0, 0.15) 0.25rem);
+    margin: 2rem 0 0;
   }
   
   .man {
     position: absolute;
     top: -1.4rem;
     left: 0;
-    width: 10px;
+    width: 20px;
     height: 1.4rem;
     opacity: 0.6;
     transform: scale(0.5);
@@ -19,8 +18,8 @@
   }
   .man .head {
     position: relative;
-    width: 0.5rem;
-    height: 0.5rem;
+    width: 0.8rem;
+    height: 0.8rem;
     transform: translateX(-1px);
     border: 1px solid #000;
     border-radius: 50%;
@@ -30,7 +29,7 @@
     position: absolute;
     top: 0.28rem;
     left: 0;
-    width: 170%;
+    width: 180%;
     height: 1px;
     background: #000;
     transform-origin: 0% 0%;
@@ -75,7 +74,7 @@
   .man .legs {
     position: relative;
     width: 1px;
-    height: 50%;
+    height: 100%;
     margin: 0 auto;
   }
   .man .legs .leg-a, .man .legs .leg-b {
