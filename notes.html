@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="style.css" />
 
     <style>
-      label,
+       label,
       textarea {
           font-size: .8rem;
           letter-spacing: 1.2px;
+          margin-top: 50px;
       }
       textarea:focus,
       textarea {
@@ -23,11 +24,14 @@
           border: 1px solid #ccc;
           box-shadow: 0.2px 0.2px 0.2px #999;
           outline: none;
+          margin-left: 5px;
+          height: 100vh;
       }
       label {
           display: block;
-          margin-bottom: 10px;
+          margin-bottom: -40px;
           padding-top: 10px;
+          margin-left: 10px;
       }
       span {
         color: #D31620;
@@ -38,7 +42,7 @@
   <body>
     <label for="story">Distributed Programming Paradigms with Cryptography Applications... just kidding <span>:)</span></label>
     
-    <textarea  id="story" name="story" rows="30" cols="120" spellcheck="false">
+    <textarea  id="story" name="story" rows="30" cols="200" spellcheck="false">
   ❖Git Commands:
     git init / initialized local git repository
     git add <file> / add file(s) to index
@@ -71,10 +75,10 @@
       
     </textarea>
 
-    <textarea id="story" name="story" rows="30" cols="120" spellcheck="false">
+    <!-- <textarea id="story" name="story" rows="30" cols="120" spellcheck="false">
   ❖React Commands:
     git init / initialized local git repository 
-    </textarea>
+    </textarea> -->
 
     <div id="dock-container">
       <div id="dock">
@@ -83,18 +87,27 @@
             <span>Home</span>
             <a href="./home.html"><img src="./icons/ioniconsHome.svg" /></a>
           </li>
+
           <li>
             <span>$App</span>
             <a href="./app.html"><img src="./icons/ioniconsApp.svg" /></a>
           </li>
+          
           <li>
             <span>Notes</span>
             <a href="./notes.html"><img src="./icons/ioniconsNotes.svg" /></a>
           </li>
+
+          <li>
+            <span>Art</span>
+            <a href="./art.html"><img src="./icons/ioniconsArt.svg" /></a>
+          </li>
+
           <li>
             <span>Github</span>
             <a href="https://github.com/F1N1" target="_blank" rel="noopener noreferrer"><img src="./icons/ioniconsGit.svg" /></a>
           </li>
+          
           <li>
             <span>Contact</span>
             <a href="./contact.html"><img src="./icons/ioniconsMail.svg" /></a>

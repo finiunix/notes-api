@@ -39,14 +39,16 @@ body {
   font-family: Open Sans;
   font: normal 20px/2;
   height: 100vh;
+  margin: 0;
 }
 
 #dock-container {
-  position: fixed;
-  bottom: 0;
+  position: absolute;
+  top: 0;
   text-align: center;
-  width: 80%;
-  background: rgba(209, 144, 144, 0.6);
+  width: 100%;
+  background: #88b9ce;
+  opacity:.8;
 }
 
 #dock-container li {
@@ -54,21 +56,25 @@ body {
   display: inline-block;
   position: relative;
   padding: 10px;
+  margin-bottom: -5px;
 }
 #dock-container ul {
-  position: absolute;
-  bottom: 10px;
-  list-style-type: none;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+  width: 100%;
+  
 }
 #dock-container li img {
-  width: 50px;
-  height: 50px;
-  transition: all 0.5s;
-  transform-origin: 50% 100%;
+  width: 30px;
+  height: 30px;
+  transition: all 1s;
+  /* transform-origin: 20% 60%; */
 }
 #dock-container li:hover img {
   transform: scale(1);
-  margin: 0 2em;
+  margin: 0 1em;
 }
 #dock-container li:hover + li img,
 #dock-container li.prev img {
@@ -76,12 +82,14 @@ body {
 }
 #dock-container li span {
   display: none;
-  bottom: 80px;
+  /* bottom: 30px;
   width: 100%;
   background:none;
-  border-radius: 10px;
+  border-radius: 10px; */
 }
 #dock-container li:hover span {
-  display: block;
+  display: none;
   color: black;
+  /* background: hsla(352, 82%, 87%, 1);
+  font-weight: bold; */
 }
