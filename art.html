@@ -19,23 +19,29 @@
         
         body {
           margin: 0;
+          font-family: monospace;
+          font-size: 16px;
+          margin-top: -10px;
+        }
+        .text {
+          margin-top: 60px;
         }
         
         /* The grid: Four equal columns that floats next to each other */
         .column {
           float: left;
-          width: 25%;
-          padding: 5px;
+          width: 20%;
+          padding: 1px;
         }
         
         /* Style the images inside the grid */
         .column img {
-          opacity: 0.8; 
+          opacity: 1; 
           cursor: pointer; 
         }
         
         .column img:hover {
-          opacity: 1;
+          opacity: 0.9;
         }
         
         /* Clear floats after the columns */
@@ -73,8 +79,8 @@
         </head>
         <body>
         
-        <div style="text-align:center">
-          <p> - click on the images below & scroll down for full preview - </p>
+        <div class="text" style="text-align:center">
+          <p></p>
         </div>
         
         <!-- The four columns -->
@@ -108,12 +114,6 @@
           </div>
           <div class="column">
             <img src="./art/f1n1J.jpg" style="width:100%" onclick="myFunction(this);">
-          </div>
-          <div class="column">
-            <img src="./art/f1n1K.jpg" style="width:100%" onclick="myFunction(this);">
-          </div>
-          <div class="column">
-            <img src="./art/f1n1L.jpg" style="width:100%" onclick="myFunction(this);">
           </div>
         </div>
         

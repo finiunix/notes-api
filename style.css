@@ -36,8 +36,8 @@ html {
 }
 
 body {
-  font-family: Open Sans;
-  font: normal 20px/2;
+  /* font-family: Open Sans;
+  font: normal 20px/2; */
   height: 100vh;
   margin: 0;
 }
@@ -48,7 +48,7 @@ body {
   text-align: center;
   width: 100%;
   background: #88b9ce;
-  opacity:.8;
+  opacity: 0.9;
 }
 
 #dock-container li {
@@ -64,17 +64,16 @@ body {
   padding: 0;
   text-align: justify;
   width: 100%;
-  
 }
 #dock-container li img {
   width: 30px;
   height: 30px;
-  transition: all 1s;
-  /* transform-origin: 20% 60%; */
+  transition: all 0.8s;
+  /* transform-origin: 20% 100%; */
 }
 #dock-container li:hover img {
-  transform: scale(1);
-  margin: 0 1em;
+  transform: scale(1.4);
+  /* margin: 0 0em; */
 }
 #dock-container li:hover + li img,
 #dock-container li.prev img {
@@ -82,14 +81,14 @@ body {
 }
 #dock-container li span {
   display: none;
-  /* bottom: 30px;
-  width: 100%;
-  background:none;
-  border-radius: 10px; */
+  /* bottom: 30px; */
+  /* width: 100%; */
+  /* background:none; */
+  /* border-radius: 10px; */
 }
 #dock-container li:hover span {
-  display: none;
-  color: black;
+   display: none;
+  /* color: black; */ 
   /* background: hsla(352, 82%, 87%, 1);
   font-weight: bold; */
 }
