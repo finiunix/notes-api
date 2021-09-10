@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-    <title>F1N1</title>
-    <link rel="icon" type="image/png" href="./icons/favicon-32x32.png" sizes="32x32" />
+    <title>ONLY399</title>
+    <link rel="icon" type="image/png" href="./icons/ONLY399PNG.png" sizes="32x32" />
     <link rel="stylesheet" href="style.css" />
 
     <style>
@@ -15,17 +15,20 @@
           font-size: .8rem;
           letter-spacing: 1.2px;
           margin-top: 50px;
+          padding-left: 50px;
+
       }
       textarea:focus,
       textarea {
-          padding: 4px;
+          padding: 10px;
           line-height: 2;
           border-radius: 4px;
           border: 1px solid #ccc;
           box-shadow: 0.2px 0.2px 0.2px #999;
           outline: none;
-          margin-left: 5px;
-          height: 90vh;
+          margin-left: 60px;
+          height: auto;
+          padding-left: 50px;
       }
       label {
           display: block;
@@ -38,13 +41,14 @@
       span {
         color: #D31620;
       }
+      
     </style>
   </head>
 
   <body>
-    <label for="story">Distributed Programming Paradigms with Cryptography Applications... just kidding <span>:)</span></label>
+    <label for="story">distributed programming paradigms with Cryptography Applications... just kidding <span>:)</span></label>
     
-    <textarea  id="story" name="story" rows="30" cols="200" spellcheck="false">
+    <textarea  id="story" name="story" rows="30" cols="100" spellcheck="false">
   ❖Git Commands:
     git init / initialized local git repository
     git add <file> / add file(s) to index
@@ -58,10 +62,15 @@
     git push origin HEAD / push the current branch
     git add . > commit -m > push origin / all, one after the other > publish on Github
 
-  ❖Inside CMD Commands:
-    touch / creates a new file
-    code . / opens the folder with visual studio
-
+  ❖Execution Policy Commands:
+   !Allways in Blue PowerShell with Administrative Rights
+    >>restoring to default Undefined:
+     Set-ExecutionPolicy -ExecutionPolicy Undefined -Scope LocalMachine
+    >>allowing All Scripts:
+     Set-ExecutionPolicy -Scope LocalMachine Unrestricted
+    >>View Status(all should be Undefined)
+     Get-ExecutionPolicy -List
+    
   ❖Server Commands:
     Set-ExecutionPolicy - Scope LocalMachine Unrestricted >>> use on PowerShell to run the .json server
     npm init / initiate and creates package.json
@@ -91,13 +100,13 @@
           </li>
 
           <li>
-            <span>$App</span>
-            <a href="./app.html"><img src="./icons/ioniconsApp.svg" /></a>
-          </li>
-          
-          <li>
             <span>Notes</span>
             <a href="./notes.html"><img src="./icons/ioniconsNotes.svg" /></a>
+          </li>
+
+          <li>
+            <span>$App</span>
+            <a href="./app.html"><img src="./icons/ioniconsApp.svg" /></a>
           </li>
 
           <li>
