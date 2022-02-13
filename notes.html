@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-    <title>ONLY399</title>
-    <link rel="icon" type="image/png" href="./icons/ONLY399PNG.png" sizes="32x32" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <title>Fini</title>
+    <link rel="icon" type="image/png" href="./icons/1010s.png" sizes="32x32" />
     <link rel="stylesheet" href="style.css" />
 
     <style>
@@ -15,9 +16,9 @@
           font-size: .8rem;
           letter-spacing: 1.2px;
           margin-top: 50px;
-          padding-left: 50px;
-
+          padding-left: 50px;         
       }
+
       textarea:focus,
       textarea {
           padding: 10px;
@@ -26,18 +27,20 @@
           border: 1px solid #ccc;
           box-shadow: 0.2px 0.2px 0.2px #999;
           outline: none;
-          margin-left: 60px;
+          margin-left: 100px;
           height: auto;
           padding-left: 50px;
       }
+
       label {
           display: block;
           margin-bottom: -40px;
-          padding-top: 10px;
-          margin-left: 10px;
-          font-family: monospace;
+          padding-top: 65px;
+          margin-left: 50px;
           font-size: 16px;
+          font-family: Ubuntu, sans-serif;
       }
+
       span {
         color: #D31620;
       }
@@ -46,85 +49,214 @@
   </head>
 
   <body>
-    <label for="story">distributed programming paradigms with Cryptography Applications... just kidding <span>:)</span></label>
+    <label for="story">. / . / / Distributed Programming Paradigms with Cryptography Applications... just kidding <span>:)</span></label>
     
     <textarea  id="story" name="story" rows="30" cols="100" spellcheck="false">
-  ❖Git Commands:
-    git init / initialized local git repository
-    git add <file> / add file(s) to index
-    git status / check status of working tree
-    git commit / comit changes in index
-    git push / push to remote repository
-    git pull / pull latest from remote repository
-    git clone / clone repository into a new directory
-    git add . / adds a change in the working directory
-    git commit -m / create a new commit containing the current contents of the index 
-    git push origin HEAD / push the current branch
-    git add . > commit -m > push origin / all, one after the other > publish on Github
+  ❖Git
+  INSTALLATION & GUIS
+  With platform specific installers for Git, GitHub also provides the
+  ease of staying up-to-date with the latest releases of the command
+  line tool while providing a graphical user interface for day-to-day
+  interaction, review, and repository synchronization.
+  For Linux and Solaris platforms, the latest release is available on
+  the official Git web site.
+  Git for All Platforms
+  htp://git-scm.com
 
-  ❖Execution Policy Commands:
-   !Allways in Blue PowerShell with Administrative Rights
-    >>restoring to default Undefined:
-     Set-ExecutionPolicy -ExecutionPolicy Undefined -Scope LocalMachine
-    >>allowing All Scripts:
-     Set-ExecutionPolicy -Scope LocalMachine Unrestricted
-    >>View Status(all should be Undefined)
-     Get-ExecutionPolicy -List
+  SETUP
+  Configuring user information used across all local repositories
+  git config --global user.name “[firstname lastname]”
+  set a name that is identifiable for credit when review version history
+  git config --global user.email “[valid-email]”
+  set an email address that will be associated with each history marker
+  git config --global color.ui auto
+  set automatic command line coloring for Git for easy reviewing
+
+  SETUP & INIT
+  Configuring user information, initializing and cloning repositories
+  git init
+  initialize an existing directory as a Git repository
+  git clone [url]
+  retrieve an entire repository from a hosted location via URL
+
+  STAGE & SNAPSHOT
+  Working with snapshots and the Git staging area
+  git status
+  show modified files in working directory, staged for your next commit
+  git add [file]
+  add a file as it looks now to your next commit (stage)
+  git reset [file]
+  unstage a file while retaining the changes in working directory
+  git diff
+  diff of what is changed but not staged
+  git diff --staged
+  diff of what is staged but not yet commited
+  git commit -m “[descriptive message]”
+  commit your staged content as a new commit snapshot
+
+  BRANCH & MERGE
+  Isolating work in branches, changing context, and integrating changes
+  git branch
+  list your branches. a * will appear next to the currently active branch
+  git branch [branch-name]
+  create a new branch at the current commit
+  git checkout
+  switch to another branch and check it out into your working directory
+  git merge [branch]
+  merge the specified branch’s history into the current one
+  git log
+  show all commits in the current branch’s history
+
+  INSPECT & COMPARE
+  Examining logs, diffs and object information
+  git log
+  show the commit history for the currently active branch
+  git log branchB..branchA
+  show the commits on branchA that are not on branchB
+  git log --follow [file]
+  show the commits that changed file, even across renames
+  git diff branchB...branchA
+  show the diff of what is in branchA that is not in branchB
+  git show [SHA]
+  show any object in Git in human-readable format
+
+  TRACKING PATH CHANGES
+  Versioning file removes and path changes
+  git rm [file]
+  delete the file from project and stage the removal for commit
+  git mv [existing-path] [new-path]
+  change an existing file path and stage the move
+  git log --stat -M
+  show all commit logs with indication of any paths that moved
+
+  IGNORING PATTERNS
+  Preventing unintentional staging or commiting of files
+  git config --global core.excludesfile [file]
+  system wide ignore patern for all local repositories
+  logs/
+  *.notes
+  pattern*/
+  Save a file with desired paterns as .gitignore with either direct string
+
+  SHARE & UPDATE
+  Retrieving updates from another repository and updating local repos
+  git remote add [alias] [url]
+  add a git URL as an alias
+  git fetch [alias]
+  fetch down all the branches from that Git remote
+  git merge [alias]/[branch]
+  merge a remote branch into your current branch to bring it up to date
+  git push [alias] [branch]
+  Transmit local branch commits to the remote repository branch
+  git pull
+  fetch and merge any commits from the tracking remote branch
+
+  REWRITE HISTORY
+  Rewriting branches, updating commits and clearing history
+  git rebase [branch]
+  apply any commits of current branch ahead of specified one
+  git reset --hard [commit]
+  clear staging area, rewrite working tree from specified commit
+
+  TEMPORARY COMMITS
+  Temporarily store modified, tracked files in order to change branches
+  git stash
+  Save modified and staged changes
+  git stash list
+  list stack-order of stashed file changes
+  git stash pop
+  write working from top of stash stack
+  git stash drop
+  discard the changes from top of stash stack  
+
+  ❖Linux:
+  ls – view contents of directory (list)
+  pwd – path of the current directory
+  cd – change directory
+  mkdir – make new directory
+  mv – move files / rename files
+  cp – copy files
+  rm – remove files
+  touch – create blank new file
+  rmdir – delete directory
+  cat – list content of file to terminal
+  clear – clear terminal window
+  echo – move data into a file
+  less – used to read the contents of textfile
+  man – show manual of Linux commands
+  sudo – enables you to perform tasks that require administrative or root permissions
+  top – task manager in terminal
+  tar – used to archive multiple files into a tarball
+  grep – used to searching words in specific files
+  head – view first lines of any text file
+  tail – view last lines of any text file
+  diff – compares the contents of two files line by line
+  kill – used for killing unresponsive program
+  jobs – display all current jobs along with their statuses
+  sort – is a command line utility for sorting lines of text files
+  df – info about system disk
+  du – check how much space a file or directory takes
+  zip – to compress your files into a zip archive
+  unzip – to extract the zipped files from a zip archive
+  ssh – a secure encrypted connection between two hosts over and insecure network
+  cal – shows calendar
+  apt – command line tool for interaction with packaging system
+  alias – custom shortcuts used to represent a command
+  w – current user info
+  whereis – used to locate the binary, source, manual page files
+  whatis – used to get one-line man page description
+  useradd – used to create a new user
+  passwd – used to changing password of current user
+  whoami – print current user
+  uptime – print current time when machine starts
+  free – print free disk space info
+  history – print used commands history
+  uname – print detailed information about your Linux system
+  ping – to check connectivity status to a server
+  chmod – to change permissions of files and directories
+  chown – to change ownership of files and directories
+  find – using find searches for files and directories
+  locate – used to locate a file, just like the search command in Windows
+  ifconfig – print ip address stuff
+  ip a – similar to ifconfig but shortest print
+  finger – gives you a short dump of info about a user 
     
-  ❖Server Commands:
-    Set-ExecutionPolicy - Scope LocalMachine Unrestricted >>> use on PowerShell to run the .json server
-    npm init / initiate and creates package.json
-    npm i / for package to show up
-    npm i jason-server / for Heroku >> outside of local server
-    heroku create <name of link> / initiate and creates the name and url of the app
-    heroku create <name of project> / initiate and creates the name and url of the project
-    git push heroku main / push project on heroku
-    heroku open / open project
-
-    
-
-      
+  ❖Personal Notes:
+  
     </textarea>
 
-    <!-- <textarea id="story" name="story" rows="30" cols="120" spellcheck="false">
-  ❖React Commands:
-    git init / initialized local git repository 
-    </textarea> -->
-
     <div id="dock-container">
-      <div id="dock">
         <ul>
           <li>
             <span>Home</span>
-            <a href="./home.html"><img src="./icons/ioniconsHome.svg" /></a>
+            <a href="./home.html">H<img src="./icons/ioniconsHome.svg" /></a>
           </li>
 
           <li>
             <span>Notes</span>
-            <a href="./notes.html"><img src="./icons/ioniconsNotes.svg" /></a>
+            <a href="./notes.html">N<img src="./icons/ioniconsNotes.svg" /></a>
           </li>
 
           <li>
             <span>$App</span>
-            <a href="./app.html"><img src="./icons/ioniconsApp.svg" /></a>
+            <a href="./app.html">A<img src="./icons/ioniconsApp.svg" /></a>
           </li>
-
+          
           <li>
-            <span>Art</span>
-            <a href="./art.html"><img src="./icons/ioniconsArt.svg" /></a>
+            <span>PY</span>
+            <a href="./py.html">P<img src="./icons/ioniconsArt.svg" /></a>
           </li>
 
           <li>
             <span>Github</span>
-            <a href="https://github.com/F1N1" target="_blank" rel="noopener noreferrer"><img src="./icons/ioniconsGit.svg" /></a>
+            <a href="https://github.com/finiunix" target="_blank" rel="noopener noreferrer">G<img src="./icons/ioniconsGit.svg" /></a>
           </li>
           
           <li>
             <span>Contact</span>
-            <a href="./contact.html"><img src="./icons/ioniconsMail.svg" /></a>
+            <a href="./contact.html">C<img src="./icons/ioniconsMail.svg" /></a>
           </li>
         </ul>
-      </div>
     </div>
   </body>
 </html>

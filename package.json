@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/F1N1/notes-api.git"
+    "url": "git+https://github.com/finiunix/notes-api.git"
   },
-  "author": "F1N1",
+  "author": "finiunix",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/F1N1/notes-api/issues"
+    "url": "https://github.com/finiunix/notes-api/issues"
   },
-  "homepage": "https://github.com/F1N1/notes-api#readme",
+  "homepage": "https://github.com/finiunix/notes-api#readme",
   "dependencies": {
     "json-server": "0.16.3"
   }
